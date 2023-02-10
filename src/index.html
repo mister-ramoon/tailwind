@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
     <section class="w-full h-screen">
@@ -25,12 +25,12 @@
             class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center"
           >
             <input
-              class="outline-none p-3 rounded-full shadow-sm"
+              class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
               type="search"
               placeholder="San Francisco"
             />
             <button
-              class="bg-white text-xl text-primary shadow-sm font-semibold p-4 w-32 rounded-full"
+              class="bg-white text-xl text-primary shadow-sm font-semibold p-4 w-32 rounded-full transition-all duration-500 ease-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
             >
               Explorar
             </button>
@@ -43,34 +43,48 @@
       <div class="p-6" id="recomendados">
         <p class="text-3xl font-semibold text-primary">Recomendados</p>
         <div
-          class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-contain flex space-x-6"
+          class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-contain flex space-x-6 overflow-y-hidden"
         >
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
             <div class="w-full h-2/5 bg-secondary rounded-b-lg">
               <p class="text-white text-bold text-lg px-4 py-2">Norway</p>
-              <p class="text-white text-md px-4">Paisajes Increíbles</p>
+              <p class="text-white text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
             <div class="w-full h-2/5 bg-white rounded-b-lg">
               <p class="text-terciary text-bold text-lg px-4 py-2">New York</p>
-              <p class="text-terciary text-md px-4">La gran manzana</p>
+              <p class="text-terciary text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
-            <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+            <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
             <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-              <p class="text-white text-bold text-lg px-4 py-2">Norway</p>
-              <p class="text-white text-md px-4">Paisajes Increíbles</p>
+              <p class="text-white text-bold text-lg px-4 py-2">Seattle</p>
+              <p class="text-white text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
-            <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+            <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
             <div class="w-full h-2/5 bg-white rounded-b-lg">
-              <p class="text-terciary text-bold text-lg px-4 py-2">New York</p>
-              <p class="text-terciary text-md px-4">La gran manzana</p>
+              <p class="text-terciary text-bold text-lg px-4 py-2">Miami</p>
+              <p class="text-terciary text-md px-4">Big city</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
+            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+              <p class="text-white text-bold text-lg px-4 py-2">Bali</p>
+              <p class="text-white text-md px-4">Big city</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-chicago bg-cover"></div>
+            <div class="w-full h-2/5 bg-white rounded-b-lg">
+              <p class="text-terciary text-bold text-lg px-4 py-2">Chicago</p>
+              <p class="text-terciary text-md px-4">Big city</p>
             </div>
           </div>
         </div>
