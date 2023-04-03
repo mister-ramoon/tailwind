@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,21 +15,35 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-Montserrat">
-    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between">
+  <body class="font-Montserrat dark:bg-gray-700">
+    <nav
+      class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10 dark:bg-gray-800"
+    >
       <div class="h-auto w-auto">
-        <p class="text-xl text-primary font-black">Platzi Travel</p>
+        <p class="text-xl text-primary font-black dark:text-white">
+          Platzi Travel
+        </p>
       </div>
       <div class="flex space-x-8">
-        <a class="font-bold text-md text-primary" href="#home">Inicio</a>
-        <a class="font-bold text-md text-primary" href="#recomendados"
+        <a class="font-bold text-md text-primary dark:text-white" href="#home"
+          >Inicio</a
+        >
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#recomendados"
           >Recomendados</a
         >
-        <a class="font-bold text-md text-primary" href="#rentas_destacadas"
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#rentas_destacadas"
           >Rentas</a
         >
-        <a class="font-bold text-md text-primary" href="#fasq">FAQS</a>
-        <a class="font-bold text-md text-primary" href="#sobre_nosotros"
+        <a class="font-bold text-md text-primary dark:text-white" href="#fasq"
+          >FAQS</a
+        >
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#sobre_nosotros"
           >Sobre nosotros</a
         >
       </div>
@@ -45,7 +59,7 @@
             height="30"
           >
             <path
-              class="text-primary"
+              class="text-primary dark:text-white"
               strokeLinecap="round"
               strokeLinejoin="round"
               d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
@@ -53,7 +67,7 @@
           </svg>
         </div>
         <div>
-          <button>
+          <button id="toggle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -64,7 +78,7 @@
               height="30"
             >
               <path
-                class="text-primary"
+                class="text-primary dark:text-white"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
@@ -83,7 +97,7 @@
             height="30"
           >
             <path
-              class="text-primary"
+              class="text-primary dark:text-white"
               strokeLinecap="round"
               strokeLinejoin="round"
               d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
@@ -126,56 +140,78 @@
         </div>
       </div>
       <div class="h-auto w-full px-6 mt-6" id="recomendados">
-        <p class="text-3xl font-semibold text-primary">Recomendados</p>
+        <p class="text-3xl font-semibold text-primary dark:text-white">
+          Recomendados
+        </p>
         <div
           class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-contain flex space-x-6 overflow-y-hidden"
         >
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+            <div
+              class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700"
+            >
               <p class="text-white text-bold text-lg px-4 py-2">Norway</p>
               <p class="text-white text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
-            <div class="w-full h-2/5 bg-white rounded-b-lg">
-              <p class="text-terciary text-bold text-lg px-4 py-2">New York</p>
-              <p class="text-terciary text-md px-4">Big city</p>
+            <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+              <p
+                class="text-terciary dark:text-white text-bold text-lg px-4 py-2"
+              >
+                New York
+              </p>
+              <p class="text-terciary dark:text-white text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
-            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+            <div
+              class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700"
+            >
               <p class="text-white text-bold text-lg px-4 py-2">Seattle</p>
               <p class="text-white text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
-            <div class="w-full h-2/5 bg-white rounded-b-lg">
-              <p class="text-terciary text-bold text-lg px-4 py-2">Miami</p>
-              <p class="text-terciary text-md px-4">Big city</p>
+            <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+              <p
+                class="text-terciary dark:text-white text-bold text-lg px-4 py-2"
+              >
+                Miami
+              </p>
+              <p class="text-terciary dark:text-white text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
-            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+            <div
+              class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700"
+            >
               <p class="text-white text-bold text-lg px-4 py-2">Bali</p>
               <p class="text-white text-md px-4">Big city</p>
             </div>
           </div>
           <div class="Card">
             <div class="w-full h-3/5 rounded-t-lg bg-chicago bg-cover"></div>
-            <div class="w-full h-2/5 bg-white rounded-b-lg">
-              <p class="text-terciary text-bold text-lg px-4 py-2">Chicago</p>
-              <p class="text-terciary text-md px-4">Big city</p>
+            <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+              <p
+                class="text-terciary dark:text-white text-bold text-lg px-4 py-2"
+              >
+                Chicago
+              </p>
+              <p class="text-terciary dark:text-white text-md px-4">Big city</p>
             </div>
           </div>
         </div>
       </div>
       <div class="px-6 w-auto lg:px-2" id="rentas_destacadas">
-        <p class="text-3xl text-primary font-semibold pb-6 mt-2">
+        <p
+          class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white"
+        >
           Rentas destacadas
         </p>
         <div class="w-full h-full flex flex-col items-center justify-center">
@@ -211,33 +247,43 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-full" id="faqs">
+      <div class="w-full px-6 h-auto mb-3" id="faqs">
         <div class="w-full h-full px-6 flex flex-col space-y-2">
-          <p class="text-3xl text-primary font-semibold">FAQs</p>
+          <p class="text-3xl text-primary font-semibold dark:text-white">
+            FAQs
+          </p>
           <div>
-            <p class="text-xl font-medium text-primary">Payment Methods</p>
-            <p class="text-md pt-2">
+            <p class="text-xl font-medium text-primary dark:text-white">
+              Payment Methods
+            </p>
+            <p class="text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
           </div>
           <div>
-            <p class="text-xl font-medium text-primary">Payment Methods</p>
-            <p class="text-md pt-2">
+            <p class="text-xl font-medium text-primary dark:text-white">
+              Payment Methods
+            </p>
+            <p class="text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
           </div>
           <div>
-            <p class="text-xl font-medium text-primary">Payment Methods</p>
-            <p class="text-md pt-2">
+            <p class="text-xl font-medium text-primary dark:text-white">
+              Payment Methods
+            </p>
+            <p class="text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
           </div>
           <div>
-            <p class="text-xl font-medium text-primary">Payment Methods</p>
-            <p class="text-md pt-2">
+            <p class="text-xl font-medium text-primary dark:text-white">
+              Payment Methods
+            </p>
+            <p class="text-md pt-2 dark:text-white">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
@@ -255,7 +301,7 @@
     </section>
     <div
       id="tab_bar"
-      class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden"
+      class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden dark:bg-gray-800"
     >
       <a href="#home">
         <svg
@@ -311,7 +357,7 @@
           />
         </svg>
       </a>
-      <button>
+      <button id="toggle-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -348,5 +394,22 @@
         </svg>
       </a>
     </div>
+    <script>
+      const htmlElement = document.querySelector("html");
+      const toggleButton = document.querySelector("#toggle");
+      const toggleButtonSm = document.querySelector("#toggle-sm");
+
+      toggleButton.addEventListener("click", () => {
+        htmlElement.classList.contains("dark")
+          ? htmlElement.classList.remove("dark")
+          : htmlElement.classList.add("dark");
+      });
+
+      toggleButtonSm.addEventListener("click", () => {
+        htmlElement.classList.contains("dark")
+          ? htmlElement.classList.remove("dark")
+          : htmlElement.classList.add("dark");
+      });
+    </script>
   </body>
 </html>
